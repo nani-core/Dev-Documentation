@@ -7,8 +7,8 @@
 
 ## Mechanisms / 机制
 
-- Interactable / 可交互对象
-	- Grabbable / 可抓取对象
+- [Interactable](Interactable) / 可交互对象
+	- [Grabbable](Grabbable.md) / 可抓取对象
 	- ~~Placement / 放置机会~~（未实现）
 - Water / 水体
 - Floatable / 可漂浮对象

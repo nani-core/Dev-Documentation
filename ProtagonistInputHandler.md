@@ -4,8 +4,6 @@
 它会根据主角控制器的输入规范与具体状态，将来自 [Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html) 的消息与输入数据经过处理，送到正确的接口中去。
 这样，主角控制器就与用户输入的实际形式解耦开来；任何组件都可以以同样方式操纵主角。
 
-## 元信息
-
 - 继承自：`MonoBehaviour`
 - 必需组件：[`Protagonist`](Protagonist.md), [`PlayerInput`](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html)
 

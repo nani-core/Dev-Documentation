@@ -3,8 +3,6 @@
 `Protagonist` 是主角的控制器类，为玩家控制的主角提供运动与交互功能。
 这是一个单例类，任意时刻只应当至多存在一个实例。
 
-## 元信息
-
 - 继承自：`MonoBehaviour`
 - 必需组件：[`ProtagonistInputHandler`](ProtagonistInputHandler), [CharacterController](https://docs.unity3d.com/ScriptReference/CharacterController.html)
 
