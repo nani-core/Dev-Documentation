@@ -6,7 +6,7 @@
 ## 元信息
 
 - 继承自：`MonoBehaviour`
-- 必需组件：`ProtagonistInputHandler`, `CharacterController`
+- 必需组件：[`ProtagonistInputHandler`](ProtagonistInputHandler), [CharacterController](https://docs.unity3d.com/ScriptReference/CharacterController.html)
 
 ## 序列化字段
 
@@ -24,7 +24,7 @@
 
 ### 物理
 
-- `CharacterController characterController`：控制运动的 [CharacterController](https://docs.unity3d.com/ScriptReference/CharacterController.html) 组件。
+- `CharacterController characterController`：控制运动的 `CharacterController` 组件。
 
 	> 此 Unity 自带的角色控制器对于简单需求非常稳定，但若有复杂需求就显得捉襟见肘了。后面可能会考虑换成别的控制方案。
 
@@ -64,13 +64,13 @@
 
 ### 交互
 
-- [`Interactable`](Interactable.md)` FocusingObject { get; set; }`：被视线选中的可交互对象。
+- [`Interactable`](Interactable.md) `FocusingObject { get; set; }`：被视线选中的可交互对象。
 
 	当此属性被更改时，原先的被选中对象（若有）会收到 `OnFocusLeave` 事件、新的被选中对象（若有）会收到 `OnFocusEnter` 事件。
 
 	将此属性设为 `null` 以取消选中。
 
-- [`Grabbable`](Grabbable.md)` GrabbingObject { get; set; }`：被抓取的可抓取对象。
+- [`Grabbable`](Grabbable.md) `GrabbingObject { get; set; }`：被抓取的可抓取对象。
 
 	当此属性被更改时，原先的被抓取对象（若有）会收到 `OnGrabStart` 事件、新的被抓取对象（若有）会收到 `OnGrabEnd` 事件。
 
