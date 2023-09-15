@@ -7,11 +7,11 @@
 
 ## Mechanisms / 机制
 
-- [Interactable](Interactable) / 可交互对象
+- [Interactable](Interactable.md) / 可交互对象
 	- [Grabbable](Grabbable.md) / 可抓取对象
 	- ~~Placement / 放置机会~~（未实现）
-- Water / 水体
-- Floatable / 可漂浮对象
-- Waterlet / 水口
-	- WaterPump / 注水口
-	- WaterDump / 排水口
+- [Water](Water.md) / 水体
+- [Floatable](Floatable.md) / 可漂浮对象
+- [Waterlet](Waterlet.md) / 水口
+	- [WaterPump](WaterPump.md) / 注水口
+	- [WaterDump](WaterDump.md) / 排水口

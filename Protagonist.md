@@ -64,15 +64,11 @@
 
 - [`Interactable`](Interactable.md) `FocusingObject { get; set; }`：被视线选中的可交互对象。
 
-	当此属性被更改时，原先的被选中对象（若有）会收到 `OnFocusLeave` 事件、新的被选中对象（若有）会收到 `OnFocusEnter` 事件。
-
 	将此属性设为 `null` 以取消选中。
 
 - [`Grabbable`](Grabbable.md) `GrabbingObject { get; set; }`：被抓取的可抓取对象。
 
-	当此属性被更改时，原先的被抓取对象（若有）会收到 `OnGrabStart` 事件、新的被抓取对象（若有）会收到 `OnGrabEnd` 事件。
-
-	> 但通常不会出现在抓着甲时直接换成乙的情况，会先放下甲再抓起乙。
+	> 通常不会出现在抓着甲时直接换成乙的情况，会先放下甲再抓起乙。
 
 	抓起时，抓取对象的变换会被移到眼部变换下，然后经历一个 `grabbingTransitionDuration` 所指定时长的归正运动；其锚点平移至视角中心（起始与终止位置距离眼部的距离相等），局部 Y 轴与眼部 Y 轴对齐。
 
@@ -110,7 +106,7 @@
 
 - `void Interact()`：做出交互。
 
-	当抓取着可抓取对象时，会把它放下；否则，会尝试向选中的可交互对象发送 `OnInteract` 消息。
+	当抓取着可抓取对象时，会把它放下；否则，会与选中的可交互对象交互。
 
 - `void GrabbingOrientDelta(float delta)`：使抓取着的对象发生指定差值的 Y 轴旋转。
 
