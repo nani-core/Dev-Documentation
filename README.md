@@ -10,6 +10,7 @@
 - [Interactable](Interactable.md) / 可交互对象
 	- [Grabbable](Grabbable.md) / 可抓取对象
 	- ~~Placement / 放置机会~~（未实现）
+	- [Clickable](Clickable.md) / 可点击对象
 - [Water](Water.md) / 水体
 - [Floatable](Floatable.md) / 可漂浮对象
 - [Waterlet](Waterlet.md) / 水口
