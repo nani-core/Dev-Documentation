@@ -19,3 +19,5 @@
 - [Waterlet](Waterlet.md) / 水口
 	- [WaterPump](WaterPump.md) / 注水口
 	- [WaterDump](WaterDump.md) / 排水口
+- [LoopShape](LoopShape.md) / 回形
+	- [PositionalLoopShape](PositionalLoopShape.md) / 基于位置的回形
