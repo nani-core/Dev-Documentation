@@ -21,3 +21,5 @@
 	- [WaterDump](WaterDump.md) / 排水口
 - [LoopShape](LoopShape.md) / 回形
 	- [PositionalLoopShape](PositionalLoopShape.md) / 基于位置的回形
+- [PressurePlate](PressurePlate.md) / 压力板
+- [AutomaticDoor](AutomaticDoor.md) / 自动门
