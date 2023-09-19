@@ -16,6 +16,7 @@
 
 	此变换会随视角俯仰而旋转，而主角本身不会。
 	> 主摄像机对象应挂载于此变换下。
+
 - `float eyeHanging`：眼部低于头顶的距离。
 
 在编辑模式下修改形状字段时，主角碰撞体的实际形状会随着改变。
@@ -37,6 +38,7 @@
 - `float maxInteractionDistance`：最大交互距离。
 
 	以眼部为计算距离的原点。
+
 - `Image focusUi`：显示准星的 Image 组件。
 - `FocusUiMap focusUiMap`：各状态下准星的样式。
 	- `Sprite normal`：正常状态的准星 sprite。
@@ -47,6 +49,15 @@
 
 	在 \[0, 1\] 间取值。数值越小，归正运动越接近线性。
 
+### 声音
+
+- `AudioSource sfxAudioSource`：播放玩家音效的 `AudioSource`。
+- `AudioClip onFocusSound`：选中可交互对象时播放。
+- `AudioClip onGrabSound`：抓起可交互对象时播放。
+- `AudioClip onDropSound`：放下可交互对象时播放。
+- `AudioSource footAudioSource`：播放脚步音效的 `AudioSource`。
+- `List<AudioClip> stepAudioClips`：走路时播放的脚步音效，会根据移动速度改变播放频率。
+
 ## 属性
 
 ### 控制
@@ -56,6 +67,7 @@
 - `float Azimuth { get; set; }`：朝向的方位角（弧度制）。
 
 	以 Z+ 为起始，X+ 为正方向。
+
 - `float Zenith { get; set; }`：眼部朝向的天顶角（弧度制）。
 
 	以黄道平面为起始，Z+ 为正方向。
