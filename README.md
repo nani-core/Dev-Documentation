@@ -1,5 +1,7 @@
 # loopool 开发文档
 
+本文档只涉及需要暴露给协作开发者的接口。
+
 ## Protagonist / 主角
 
 - [Protagonist](Protagonist.md) / 主角
@@ -11,6 +13,7 @@
 	- [Grabbable](Grabbable.md) / 可抓取对象
 	- ~~Placement / 放置机会~~（未实现）
 	- [Clickable](Clickable.md) / 可点击对象
+	- [Detachable](Detachable.md) / 可解体对象
 - [Water](Water.md) / 水体
 - [Floatable](Floatable.md) / 可漂浮对象
 - [Waterlet](Waterlet.md) / 水口
