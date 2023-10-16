@@ -5,57 +5,23 @@
 
 - 继承自：`MonoBehaviour`
 
-## 序列化字段
+## 序列化对象
 
-### 形状
-
-- `float height`：高度。
-- `float radius`：半径。
-- `Transform eye`：眼部变换。
-
-	此变换会随视角俯仰而旋转，而主角本身不会。
-	> 主摄像机对象应挂载于此变换下。
-
-- `float eyeHanging`：眼部低于头顶的距离。
-
-在编辑模式下修改形状字段时，主角碰撞体的实际形状会随着改变。
-
-### 控制
-
-- `float walkingSpeed`：行走速率增益。
-- `float sprintingSpeed`：疾跑速率增益。
-- `float orientingSpeed`：视角转动速率增益。
-
-### 交互
-
-- `float maxInteractionDistance`：最大交互距离。
-
-	以眼部为计算距离的原点。
-
-- `Image focusUi`：显示准星的 Image 组件。
-- `FocusUiMap focusUiMap`：各状态下准星的样式。
-	- `Sprite normal`：正常状态的准星 sprite。
-	- `Sprite hovering`：视线选中可交互对象时的准星 sprite。
-	- `Sprite grabbing`：抓住对象时的准星 sprite。
-- `float grabbingTransitionDuration`：抓取对象归正到视野中央的时间，以秒记。
-- `float grabbingEasingFactor`：抓取对象归正到视野中央的缓动程度。
-
-	在 \[0, 1\] 间取值。数值越小，归正运动越接近线性。
-
-### 声音
-
-- `AudioSource sfxAudioSource`：播放玩家音效的 `AudioSource`。
-- `AudioClip onFocusSound`：选中可交互对象时播放。
-- `AudioClip onGrabSound`：抓起可交互对象时播放。
-- `AudioClip onDropSound`：放下可交互对象时播放。
-- `AudioSource footAudioSource`：播放脚步音效的 `AudioSource`。
-- `List<AudioClip> stepAudioClips`：走路时播放的脚步音效，会根据移动速度改变播放频率。
+- [`ProtagonistProfile`](ProtagonistProfile.md) `profile`：配置。
 
 ## 属性
 
 ### 控制
 
 - `Transform Eye { get; }`：眼部变换。
+
+	此变换朝向主角视角。
+
+- `Vector3 Upward { get; }`：视角的上方。
+
+	当主角仰视或俯视时，此向量会相应地倾斜。
+
+- `bool IsOnGround { get; }`：是否着地。
 - `bool IsSprinting { get; set; }`：是否疾跑。
 - `float Azimuth { get; set; }`：朝向的方位角（弧度制）。
 
@@ -87,6 +53,8 @@
 
 	未抓取对象时，此属性固定为 `false`。
 
+- `LoopShape SatisfiedLoopShape { get; }`：当前满足的回形图案。
+
 ## 方法
 
 ### 控制
@@ -103,9 +71,26 @@
 	输入为一二维向量。
 	X 分量表示朝主角身体（非眼部）前方（局部 Z+）的速度，Y 分量表示朝主角右方（局部 X+）的速度。
 
-	输入会被主角的移动速率增益影响，且会自动随物理帧间隔缩放。
+	输入会被主角的移动速率增益影响，且会缓冲到下一物理帧生效。
+
+	离地时无效。
 
 	> 此方法通常由 `ProtagonistInputHandler` 调用。
+
+- `void MoveDelta(Vector2 vXy)`：使发生指定距离的运动。
+
+	输入为一二维向量。
+	X 分量表示朝主角身体（非眼部）前方（局部 Z+）的距离，Y 分量表示朝主角右方（局部 X+）的距离。
+
+	输入会被主角的移动速率增益影响，且会缓冲到下一物理帧生效。
+
+	离地时无效。
+
+	> 讨论：此方法的效果是否不应受到移动速率增益影响？
+
+- `void Jump()`：跳跃。
+
+	离地时无效。
 
 ### 交互
 

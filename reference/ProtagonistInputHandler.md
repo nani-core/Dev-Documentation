@@ -6,6 +6,6 @@
 
 - 继承自：`MonoBehaviour`
 
-> `ProtagonistInputHandler` 没有任何公有属性或方法，但它必须与 `Protagonist` 绑定在同一个对象上，并需要 `PlayerInput` 也绑定在同一个对象上以接收用户输入。
+`ProtagonistInputHandler` 没有任何公有属性或方法，但它必须与 `Protagonist` 绑定在同一个对象上，并需要 `PlayerInput` 也绑定在同一个对象上以接收用户输入。
 
-> `PlayerInput` 会发送 `On + [input action map 资产中定义的 action 名]` 的<u>消息</u>。注意不要写出重名方法导致被用户输入触发不期望的调用。
+`PlayerInput` 会发送 `On + [input action map 资产中定义的 action 名]` 的<u>消息</u>。注意不要写出重名方法导致被用户输入触发不期望的调用。

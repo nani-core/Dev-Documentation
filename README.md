@@ -5,7 +5,9 @@
 ### Protagonist / 主角
 
 - [Protagonist](reference/Protagonist.md) / 主角
+- [ProtagonistProfile](reference/ProtagonistProfile.md) / 主角配置
 - [ProtagonistInputHandler](reference/ProtagonistInputHandler.md) / 主角输入处理器
+- [FocusUi](reference/FocusUi.md) / 交互焦点 UI 控制器
 
 ### Mechanisms / 机制
 
