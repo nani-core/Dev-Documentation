@@ -23,6 +23,7 @@
 	- [WaterDump](reference/WaterDump.md) / 排水口
 - [LoopShape](reference/LoopShape.md) / 回形
 	- ~~PositionalLoopShape / 基于位置的回形~~（已废弃）
+	- [OpticalLoopShape](reference/OpticalLoopShape.md) / 光学回形
 - [PressurePlate](reference/PressurePlate.md) / 压力板
 - [AutomaticDoor](reference/AutomaticDoor.md) / 自动门
 
