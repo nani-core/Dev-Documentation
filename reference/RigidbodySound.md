@@ -1,5 +1,7 @@
 # RigidbodySound
 
+> 请参阅[手册/声音](../manual/audio.md)。
+
 `RigidbodySound` 是为刚体配音的控制器类。
 
 - 继承自：`MonoBehaviour`

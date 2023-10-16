@@ -1,5 +1,7 @@
 # OpticalLoopShape
 
+> 请参阅[手册/光学回形](../manual/optical-loopshape.md)。
+
 `OpticalLoopShape` 是光学回形的控制器类。
 
 光学回形在「环」（blasto）和「岛」（gastro）的 `GameObject` 在屏幕上的遮挡关系正好构成近似固定宽度的窄带时被满足。

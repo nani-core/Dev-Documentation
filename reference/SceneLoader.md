@@ -1,5 +1,7 @@
 # SceneLoader
 
+> 请参阅[手册/场景调度](../manual/scene-management.md)。
+
 `SceneLoader` 组件提供加载其他场景的事件入口。
 
 - 继承自：`MonoBehaviour`

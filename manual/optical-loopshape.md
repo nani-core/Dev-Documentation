@@ -1,9 +1,12 @@
 # 光学回形
 
-回形图案是本游戏最重要的概念。
-[光学回形](
+> 请参阅[设计文档/回形图案#光学回形](
 	https://github.com/nani-core/Design-Documentation/blob/master/Pattern.md#optical-patterns--%E5%85%89%E5%AD%A6%E5%9B%9E%E5%BD%A2
-)（Optical Loop Shape）是指那些*本来没有关系，但是在特定透视下看上去正好可以凑成回形*的物体对。
+)。
+
+本篇手册介绍本游戏里最高级的机制——光学回形（Optical Loop Shape）。
+
+光学回形是指那些*本来没有关系，但是在特定透视下看上去正好可以凑成回形图案*的物体对。
 如下图是一个正好满足的方形光学回形。
 
 <center><img height="300" src="../public/satisfied-square-optical-loopshape.png" /></center>

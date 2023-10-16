@@ -2,11 +2,14 @@
 
 ## Manual / 手册
 
+- [生命周期总览](manual/life-cycle-overview.md)（待编撰）
 - [交互](manual/interaction.md)
 - [光学回形](manual/optical-loopshape.md)
-- 相机与渲染
-- 声音
-- 场景管理
+- [相机与渲染](manual/camera-and-rendering.md)（待编撰）
+- [声音](manual/audio.md)（待编撰）
+- [场景搭建](manual/architecture.md)（待编撰）
+- [场景调度](manual/scene-management.md)（待编撰）
+- [打包](manual/building.md)（待编撰）
 
 ## Reference / 参考
 

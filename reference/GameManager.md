@@ -1,5 +1,7 @@
 # GameManager
 
+> 请参阅[手册/生命周期总览](../manual/life-cycle-overview.md)。
+
 `GameManager` 是游戏管理器类，负责整个游戏的生命周期以及重要对象实例的管理。
 
 > 不应将某个具体关卡等*不亘穿整个游戏生命周期*的对象的状态交由本类来管理。
@@ -25,6 +27,6 @@
 
 - `RenderTexture WorldView`：主摄像机看到的世界画面。
 
-	此材质是实现[光学回形](OpticalLoopShape.md)功能的重要基础。
+	此材质是实现[光学回形](../manual/optical-loopshape.md)的重要基础。
 
 - `Protagonist Protagonist`：当前世界中存在的 `Protagonist` 唯一实例。

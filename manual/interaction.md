@@ -1,10 +1,12 @@
 # 交互
 
-本篇手册介绍设计文档中[玩家/抬头显示](
+> 请参阅[设计文档/玩家/抬头显示](
 	https://github.com/nani-core/Design-Documentation/blob/master/Player.md#hud--%E6%8A%AC%E5%A4%B4%E6%98%BE%E7%A4%BA
-)一节与[行为/交互](
+)与[设计文档/行为/交互](
 	https://github.com/nani-core/Design-Documentation/blob/master/Behaviors.md#interactions--%E4%BA%A4%E4%BA%92
-)一节的内容在程序上的设计。
+)。
+
+本篇手册介绍游戏中最基本的交互系统。
 
 ## 概述
 

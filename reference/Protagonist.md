@@ -1,5 +1,7 @@
 # Protagonist
 
+> 请参阅[手册/生命周期总览](../manual/life-cycle-overview.md)。
+
 `Protagonist` 是主角的控制器类，为玩家控制的主角提供运动与交互功能。
 
 任意时刻，世界中应当只存在唯一一个 `Protagonist` 的实例。

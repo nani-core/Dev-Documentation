@@ -1,5 +1,7 @@
 # SceneUtility
 
+> 请参阅[手册/场景调度](../manual/scene-management.md)。
+
 `SceneUtility` 是提供场景辅助功能的静态工具类。
 
 ## 方法

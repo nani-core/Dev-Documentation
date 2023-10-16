@@ -1,5 +1,7 @@
 # AudioUtility
 
+> 请参阅[手册/声音](../manual/audio.md)。
+
 `AudioUtility` 是提供声音辅助功能的静态工具类。
 
 ## 类型
