@@ -3,9 +3,9 @@
 ## Manual / 手册
 
 - [交互](manual/interaction.md)
-- 光学回形
-- 相机管理
-- 声音
+- [光学回形](manual/optical-loopshape.md)
+- [相机管理]()
+- [声音]()
 
 ## Reference / 参考
 
