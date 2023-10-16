@@ -3,8 +3,9 @@
 `OpticalLoopShape` 是光学回形的控制器类。
 
 光学回形在「环」（blasto）和「岛」（gastro）的 `GameObject` 在屏幕上的遮挡关系正好构成近似固定宽度的窄带时被满足。
+如下图为一个满足了的光学回形。
 
-![一个满足的光学回形。](satisfied-optical-loopshape.png)
+![一个满足的光学回形。](../public/satisfied-square-optical-loopshape.png)
 
 - 继承自：[`LoopShape`](LoopShape.md)
 
@@ -28,3 +29,7 @@
 - `void DestroyGastro()`：销毁岛。
 
 - `void Stamp()`：投射环。
+
+	如下图为一个投射过的光学回形（岛已销毁）。
+
+	![一个投射过的光学回形。](../public/stamped-square-optical-loopshape.png)
