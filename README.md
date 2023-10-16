@@ -1,5 +1,12 @@
 # 开发文档
 
+## Manual / 手册
+
+- [交互](manual/interaction.md)
+- 光学回形
+- 相机管理
+- 声音
+
 ## Reference / 参考
 
 - [GameManager](reference/GameManager.md) / 游戏管理器
@@ -34,8 +41,6 @@
 - [MeshTile](reference/MeshTile.md) / 铺设工具
 - [RigidbodySound](reference/RigidbodySound.md) / 刚体声音
 - [SceneLoader](reference/SceneLoader.md) / 场景加载
-
-#### Statics / 静态类
-
-- [AudioUtility](reference/AudioUtility.md) / 声音工具
-- [SceneUtility](reference/SceneUtility.md) / 场景工具
+- Statics / 静态类
+	- [AudioUtility](reference/AudioUtility.md) / 声音工具
+	- [SceneUtility](reference/SceneUtility.md) / 场景工具
