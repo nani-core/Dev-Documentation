@@ -4,8 +4,9 @@
 
 - [交互](manual/interaction.md)
 - [光学回形](manual/optical-loopshape.md)
-- [相机管理]()
-- [声音]()
+- 相机与渲染
+- 声音
+- 场景管理
 
 ## Reference / 参考
 
