@@ -4,7 +4,6 @@
 这是一个单例类，任意时刻只应当至多存在一个实例。
 
 - 继承自：`MonoBehaviour`
-- 必需组件：[`ProtagonistInputHandler`](ProtagonistInputHandler), [CharacterController](https://docs.unity3d.com/ScriptReference/CharacterController.html)
 
 ## 序列化字段
 
@@ -20,12 +19,6 @@
 - `float eyeHanging`：眼部低于头顶的距离。
 
 在编辑模式下修改形状字段时，主角碰撞体的实际形状会随着改变。
-
-### 物理
-
-- `CharacterController characterController`：控制运动的 `CharacterController` 组件。
-
-	> 此 Unity 自带的角色控制器对于简单需求非常稳定，但若有复杂需求就显得捉襟见肘了。后面可能会考虑换成别的控制方案。
 
 ### 控制
 

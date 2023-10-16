@@ -5,7 +5,6 @@
 这样，主角控制器就与用户输入的实际形式解耦开来；任何组件都可以以同样方式操纵主角。
 
 - 继承自：`MonoBehaviour`
-- 必需组件：[`Protagonist`](Protagonist.md), [`PlayerInput`](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html)
 
 > `ProtagonistInputHandler` 没有任何公有属性或方法，但它必须与 `Protagonist` 绑定在同一个对象上，并需要 `PlayerInput` 也绑定在同一个对象上以接收用户输入。
 
