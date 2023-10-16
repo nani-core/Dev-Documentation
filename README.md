@@ -2,6 +2,8 @@
 
 ## Reference / 参考
 
+- [GameManager](reference/GameManager.md) / 游戏管理器
+
 ### Protagonist / 主角
 
 - [Protagonist](reference/Protagonist.md) / 主角
@@ -30,5 +32,10 @@
 ### Utility / 工具
 
 - [MeshTile](reference/MeshTile.md) / 铺设工具
-- [AudioUtility](reference/AudioUtility.md) / 声音工具
 - [RigidbodySound](reference/RigidbodySound.md) / 刚体声音
+- [SceneLoader](reference/SceneLoader.md) / 场景加载
+
+#### Statics / 静态类
+
+- [AudioUtility](reference/AudioUtility.md) / 声音工具
+- [SceneUtility](reference/SceneUtility.md) / 场景工具

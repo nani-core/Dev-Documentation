@@ -1,7 +1,15 @@
 # Protagonist
 
 `Protagonist` 是主角的控制器类，为玩家控制的主角提供运动与交互功能。
-这是一个单例类，任意时刻只应当至多存在一个实例。
+
+任意时刻，世界中应当只存在唯一一个 `Protagonist` 的实例。
+若实例初始化时发现 [`GameManager`](GameManager.md) 里已经注册了其他实例，会立即自毁；时机先于 `Start`。
+
+`Protagonist` 的实例会在初始化后将自己置为 `DontDestroyOnLoad`。
+动态加载新场景时，原本存在的实例会维持存在并保持控制权；新场景中的实例会自毁。
+卸载场景时，实例不会被销毁；退出关卡时请手动销毁。
+
+> 销毁 `Protagonist` 实例的工作后面应当交给 `GameManager` 自动处理。
 
 - 继承自：`MonoBehaviour`
 
