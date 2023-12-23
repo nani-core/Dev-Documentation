@@ -1,3 +1,48 @@
 # 相机与渲染
 
 本篇手册介绍游戏的渲染系统与相机的调度。
+
+> 注意：目前还未涉足**传送门**相关的功能。
+> 届时，本篇的部分甚至全部内容可能会失效。
+
+## 渲染管线
+
+为了核味与自动曝光，本项目选用了 HDRP。
+与渲染相关的全局设置都在 `Assets/Configs/Rendering` 里。
+
+## 关卡视效
+
+请善用区域 [volume](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.0/manual/understand-volumes.html)。
+
+## 主相机
+
+主游戏中的主相机，即玩家头顶着的那个，主要做三件事：
+
+- 渲染主视角
+- 额外渲染若干轮特殊物体
+- 叠加绘制 debug UI
+
+为了避免干扰 RP 的内在节奏，debug UI 采用了真·UI 的解决方案（可见于 Game Manager 的 prefab 里）。
+
+## 单个物体的渲染
+
+`RenderUtility` 中实现了两个方法：`RenderMask` 和 `RenderObject`。
+`RenderMask` 会将 RT 中物体在屏幕上的区域涂成纯白，而 `RenderObject` 会在 RT 上特异性地画出物体本身（无关的地方不画）。
+
+后者的实现很简单，就是先渲染相机画面，然后用前者的结果一交就完了。
+
+前者的实现比较迂回：
+首先将目标物体的所有 Renderer 的材质换成一个巨TM亮的纯白材质（输出 `(100, 100, 100, 1)` 的 unlit），然后渲染相机画面。
+渲染出来的结果的纯白部分就是我们想要的区域，过一下颜色检测的 shader（`IndicateByValue`，indicate 的命名来源是集合的指示函数）就行了。
+
+**所以场景中不能出现纯白或过亮的物体！**
+
+`RenderMask` 还支持一个 boolean 选项：是否无视遮挡。
+如果勾上的话，就不管其他物体的遮挡，强行绘制整个轮廓了（`RenderObject` 也继承了这个功能，可以跨物体绘制（当然阴影就没了））。
+这个的实现方法是在渲染相机画面之前给目标对象设置一个特殊的 layer，然后让相机只渲染这个 layer。
+
+调用一次 `RenderMask` 会导致额外渲染一次场景，`RenderObject` 则是两次。
+还挺贵的，能少调尽量少调。
+
+> 但是每个活跃的 `OpticalLoopShape` 都在每次检测的时候至少调用两次 `RenderMask`，非常之非常。
+> `@Omnisch` 嗯，嗯嗯。
