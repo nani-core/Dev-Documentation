@@ -6,11 +6,11 @@
 此工具组件铺设出来的对象在编辑模式下不可被选中。
 进入运行模式时，此组件会销毁自身。
 
-- 继承自：`MonoBehaviour`
+- 继承自：[`ArchitectureGenerator`](./ArchitectureGenerator.md)
 
 ## 序列化字段
 
-- `GameObject tile`：基础单位对象。
+- `GameObject tile`：铺设单元。
 - `Vector3 i, j, k`：网格基准方向。
 - `Vector3Int count`：网格在基准方向上重复的次数。
 - `Vector3 uvw`：组件本身锚点在铺设结果中所处的位置比例。

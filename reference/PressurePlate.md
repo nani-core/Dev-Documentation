@@ -2,6 +2,9 @@
 
 `PressurePlate` 是压力板的控制器类。
 
+> 此控制器类的语义过于上层，将考虑用更多组件组合来下位替代。
+> 请合理使用 prefab 以免将来的麻烦。
+
 - 继承自：`MonoBehaviour`
 - 必需组件：`Collider`
 
