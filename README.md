@@ -51,6 +51,8 @@
 - StampHandler / 投射控制器（待编撰）
 - [Carrier](reference/Carrier.md) / 载体
 	- [DtCarrier](reference/DtCarrier.md) / 双掷载体
+- [Logic](reference/Logic.md) / 场景逻辑
+	- [DelayedLogic](reference/DelayedLogic.md) / 延时逻辑
 - Statics / 静态类
 	- [AudioUtility](reference/AudioUtility.md) / 声音工具
 	- [SceneUtility](reference/SceneUtility.md) / 场景工具
