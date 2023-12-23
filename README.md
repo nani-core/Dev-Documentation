@@ -11,6 +11,7 @@
 - [场景调度](manual/scene-management.md)（待编撰）
 - [打包](manual/building.md)（待编撰）
 - [Git 仓库管理](manual/git-repository-management.md)
+- [建模](manual/modelling.md)
 
 ## Reference / 参考
 
