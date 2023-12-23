@@ -22,8 +22,6 @@
 
 - `bool showDebugLayer`：（仅 editor）显示调试图层。
 
-	> 此字段目前失效。
-
 - `float debugLayerOpacity`：（仅 editor）调试图层的透明度。
 
 ## 方法
@@ -35,3 +33,10 @@
 	如下图为一个投射过的光学回形（岛已销毁）。
 
 	![一个投射过的光学回形。](../public/stamped-square-optical-loopshape.png)
+
+- `void Hollow()`：在环上挖一个岛形状的洞。
+
+- `void DoDefault()`：一键执行投射-挖洞-销毁。
+
+	此方法是临时提出的语法糖，将考虑由重新设计语义的接口替代。
+	请善用 prefab 以免将来的麻烦。
