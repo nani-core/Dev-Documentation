@@ -3,7 +3,7 @@
 
 ## 常驻分支
 
-[主项目](https://github.com/nani-core/loopool)有两个常驻分支（branch）：`master` 和 `dev`。
+[主项目](https://github.com/nani-core/Stencil)有两个常驻分支（branch）：`master` 和 `dev`。
 
 ### `master`
 

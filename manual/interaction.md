@@ -18,7 +18,7 @@
 
 在交互行为的发出者，也即玩家这一方，所有的选项可在 [`Protagonist`](../reference/Protagonist.md) 的 `profile` 所引用的 `ProtagonistProfile` 实例里配置。
 
-要新建实例，在资产面板（Project panel）中调出右键菜单，选择 `Nani Core/Loopool/Protagonist Profile` 即可。
+要新建实例，在资产面板（Project panel）中调出右键菜单，选择 `Nani Core/Stencil/Protagonist Profile` 即可。
 
 <center><img height="400" src="../public/asset-menu-protagonist-profile.png" /></center>
 
