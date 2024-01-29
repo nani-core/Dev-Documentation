@@ -4,7 +4,8 @@
 
 - [生命周期总览](manual/life-cycle-overview.md)（待编撰）
 - [交互](manual/interaction.md)
-- [光学回形](manual/optical-loopshape.md)
+- ~~[光学回形](manual/optical-loopshape.md)~~（已过时）
+- [回形](manual/loopshape.md)（待编撰）
 - [相机与渲染](manual/camera-and-rendering.md)
 - [声音](manual/audio.md)
 - [场景搭建](manual/architecture.md)（待编撰）
@@ -42,9 +43,9 @@
 - [Waterlet](reference/Waterlet.md) / 水口
 	- [WaterPump](reference/WaterPump.md) / 注水口
 	- [WaterDump](reference/WaterDump.md) / 排水口
-- [LoopShape](reference/LoopShape.md) / 回形
-	- ~~PositionalLoopShape / 基于位置的回形~~（已废弃）
-	- [OpticalLoopShape](reference/OpticalLoopShape.md) / 光学回形
+- [Loopshape](reference/Loopshape.md) / 回形
+	- [LoopshapeValidator](reference/LoopshapeValidator.md) / 回形检查器
+		- [OpticalValidator](reference/OpticalValidator.md) / 光学回形检查器
 - [PressurePlate](reference/PressurePlate.md) / 压力板
 
 ### Utility / 工具
