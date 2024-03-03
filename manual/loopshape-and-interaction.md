@@ -30,3 +30,36 @@
 - [FocusValidator](../reference/FocusValidator.md)：在玩家准星落在物体上时满足。
 - [GrabbableValidator](../reference/GrabbableValidator.md)：继承自 `FocusValidator`，但额外要求在玩家抓起物体时才满足。
 - [OpticalValidator](../reference/OpticalValidator.md)：光学回形。可以指定岛与环物体。
+
+## 玩家交互
+
+在承担主角控制的 `Protagonist` 类中，维护了一个“当前满足的 `Loopshape`”的集合。
+场景中的 `Loopshape` 在其 `LoopshapeValidator` 的满足条件成立/失败时，会将变动通知给 `Protagonist`；
+后者即更新自己的集合。
+
+在玩家做出交互操作时，会遍历上述 `Loopshape` 集合，依次触发其“开启”事件。
+紧接着，若玩家正在抓取物体，则物体也会被放下。
+
+这个系统可以实现「只要是回形就能交互」且「不是回形就不能交互」的核心设计。
+
+## 行为组件
+
+行为，是指玩家交互之后“会发生什么事”的最小构成单位。
+其具体内容请看[设计文档/行为](https://github.com/nani-core/Design-Documentation/blob/master/mechanics/Behaviors.md)一章。
+
+之前，行为由 [Interactable](../deprecated/reference/Interactable.md) 基类的子类来承担。
+玩家在与挂载有 `Interactable` 组件的 `GameObject` 交互时，会主动触发其行为。
+
+现在，此设计已经完全被废弃，`Interactable` 已经从项目中消失了。
+取而代之的是新的基于 `Loopshape` 的交互系统。
+原先所有 `Interactable` 的子类，现在退化为**提供行为**的被动组件；玩家交互时不会主动触发它们。
+如果需要触发某种行为，则应当藉由 `Loopshape` 的 `onOpen` 事件，手动调用行为组件的接口方法。
+
+目前有下面几种行为组件：
+
+- [Grabbable](../reference/Grabbable.md)：抓起、放下。
+- [Detachable](../reference/Detachable.md)：解体。
+
+注意，设计文档中的「Floating / 漂浮」行为并不由行为组件来支持。
+相反，任何刚体在水体里都会受到浮力。
+可以通过调整刚体的质量来影响其密度，进而影响其漂浮行为。

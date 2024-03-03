@@ -31,7 +31,7 @@
 
 ### Mechanisms / 机制
 
-- Behavioral Components / 功能组件
+- Behavioral Components / 行为组件
 	- [Grabbable](reference/Grabbable.md) / 可抓取对象
 	- [Detachable](reference/Detachable.md) / 可解体对象
 - [Water](reference/Water.md) / 水体

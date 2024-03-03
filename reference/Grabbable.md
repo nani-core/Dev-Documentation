@@ -4,6 +4,9 @@
 
 被抓起的对象会在准星连线被遮挡时自动放下。
 
+注意：挂载 `Grabbable` 与否**并不**决定物体能否被抓起。
+即使是未挂载的物体，也可以通过脚本设置 `Protagonist.GrabbingObject` 来强行抓起。
+
 - 继承自：`MonoBehaviour`
 
 ## 序列化字段
