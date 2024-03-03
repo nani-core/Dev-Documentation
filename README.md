@@ -3,9 +3,7 @@
 ## Manual / 手册
 
 - [生命周期总览](manual/life-cycle-overview.md)（待编撰）
-- ~~[交互](manual/interaction.md)~~（已废弃）
-- [回形](manual/loopshape.md)（待编撰）
-- ~~[光学回形](manual/optical-loopshape.md)~~（已废弃）
+- [回形与交互](manual/loopshape-and-interaction.md)
 - [相机与渲染](manual/camera-and-rendering.md)
 - [声音](manual/audio.md)
 - [场景搭建](manual/architecture.md)（待编撰）
@@ -33,11 +31,9 @@
 
 ### Mechanisms / 机制
 
-- ~~[Interactable](reference/Interactable.md) / 可交互对象~~（已废弃）
 - Behavioral Components / 功能组件
 	- [Grabbable](reference/Grabbable.md) / 可抓取对象
 	- [Detachable](reference/Detachable.md) / 可解体对象
-	- ~~[Floatable](reference/Floatable.md) / 可漂浮对象~~（已废弃）
 - [Water](reference/Water.md) / 水体
 - [Waterlet](reference/Waterlet.md) / 水口
 	- [WaterPump](reference/WaterPump.md) / 注水口
