@@ -1,8 +1,15 @@
 # Detachable
 
-`Detachable` 是可以在主角点击交互时解体的可交互组件类。
+`Detachable` 是赋予物体*解体*的功能组件类。
 
-- 继承自：[Interactable](Interactable.md)
+`Detachable` 必须作用在 `Rigidbody` 上。
+在 `Detachable` 方法被调用后，自身的 hierarchy 将会被移动到最近的 static 父级 `Transform` 下，然后将 `Rigidbody` 的 `isKinematic` 关闭。
+
+注意，`Detachable` 不会在 `Start` 时自动开启 `Rigidbody` 的 `isKinematic` 选项。
+这一步需要关卡设计师手动完成。
+
+- 继承自：`MonoBehaviour`
+- 必需组件：`Rigidbody`
 
 # 序列化字段
 

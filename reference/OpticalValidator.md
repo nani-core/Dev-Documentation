@@ -1,6 +1,6 @@
-# OpticalLoopShape
+# FocusValidator
 
-`OpticalLoopShape` 是光学回形的检测器。
+`FocusValidator` 是光学回形的检测器。
 
 光学回形在「环」（blasto）和「岛」（gastro）的 `GameObject` 在屏幕上的遮挡关系正好构成近似固定宽度的窄带时被满足。
 如下图为一个满足了的光学回形。

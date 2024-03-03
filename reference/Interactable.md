@@ -1,5 +1,6 @@
 # Interactable
 
+> 已废弃。
 > 请参阅[手册/交互](../manual/interaction.md)。
 
 `Interactable` 是一切可交互组件的基类。

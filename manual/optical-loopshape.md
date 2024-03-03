@@ -1,6 +1,6 @@
 # 光学回形
 
-> Deprecated.
+> 已废弃。
 
 > 请参阅[设计文档/回形图案#光学回形](
 	https://github.com/nani-core/Design-Documentation/blob/master/Pattern.md#optical-patterns--%E5%85%89%E5%AD%A6%E5%9B%9E%E5%BD%A2

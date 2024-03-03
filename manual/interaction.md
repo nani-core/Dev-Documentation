@@ -1,5 +1,6 @@
 # 交互
 
+> 已废弃。
 > 请参阅[设计文档/玩家/抬头显示](
 	https://github.com/nani-core/Design-Documentation/blob/master/Player.md#hud--%E6%8A%AC%E5%A4%B4%E6%98%BE%E7%A4%BA
 )与[设计文档/行为/交互](
