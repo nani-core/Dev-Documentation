@@ -3,7 +3,7 @@
 `ProtagonistProfile` 是储存主角配置信息的数据容器类。
 整个游戏应当共用同一个 `ProtagonistProfile` 实例，除非某些关卡里需要更改主角的配置（例如增大跳跃高度）。
 
-本类实例可以由资产右键菜单 `Nani Core/Stencil/Protagonist Profile` 创建。
+本类实例可以由资产右键菜单 `Nani Core/Protagonist Profile` 创建。
 
 - 继承自：`ScriptableObject`
 

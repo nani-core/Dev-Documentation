@@ -35,6 +35,7 @@
 	- [Grabbable](reference/Grabbable.md) / 可抓取对象
 	- [Detachable](reference/Detachable.md) / 可解体对象
 - [Water](reference/Water.md) / 水体
+	- [WaterProfile](reference/WaterProfile.md) / 水体配置
 - [Waterlet](reference/Waterlet.md) / 水口
 	- [WaterPump](reference/WaterPump.md) / 注水口
 	- [WaterDump](reference/WaterDump.md) / 排水口
