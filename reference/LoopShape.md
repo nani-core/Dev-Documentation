@@ -4,7 +4,7 @@
 
 - 继承自：`MonoBehaviour`
 
-> 请参阅[手册/回形](../manual/loopshape.md)。
+> 请参阅[手册/回形](../manual/loopshape-and-interaction.md)。
 
 ## 序列化字段
 

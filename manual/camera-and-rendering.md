@@ -10,10 +10,6 @@
 为了核味与自动曝光，本项目选用了 HDRP。
 与渲染相关的全局设置都在 `Assets/Configs/Rendering` 里。
 
-## 关卡视效
-
-请善用区域 [volume](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.0/manual/understand-volumes.html)。
-
 ## 主相机
 
 主游戏中的主相机，即玩家头顶着的那个，主要做三件事：

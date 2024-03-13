@@ -5,6 +5,7 @@
 - [生命周期总览](manual/life-cycle-overview.md)（待编撰）
 - [回形与交互](manual/loopshape-and-interaction.md)
 - [相机与渲染](manual/camera-and-rendering.md)
+- [视觉效果](manual/visual-effect.md)
 - [声音](manual/audio.md)
 - [场景搭建](manual/architecture.md)（待编撰）
 - [场景调度](manual/scene-management.md)
